@@ -7,11 +7,17 @@
     <fragment
         android:id="@+id/articleFragment"
         android:name="com.example.whataboutnews.ui.fragments.ArticleFragment"
-        android:label="ArticleFragment" />
+        android:label="ArticleFragment">
+
+<!--      <argument-->
+<!--            android:name="article"-->
+<!--            app:argType="Article"-->
+    </fragment>
+
     <fragment
         android:id="@+id/favouritesFragment"
         android:name="com.example.whataboutnews.ui.fragments.FavouritesFragment"
-        android:label="FavouritesFragment" >
+        android:label="FavouritesFragment">
         <action
             android:id="@+id/action_favouritesFragment_to_articleFragment"
             app:destination="@id/articleFragment" />
@@ -19,7 +25,7 @@
     <fragment
         android:id="@+id/headlinesFragment"
         android:name="com.example.whataboutnews.ui.fragments.HeadlinesFragment"
-        android:label="HeadlinesFragment" >
+        android:label="HeadlinesFragment">
         <action
             android:id="@+id/action_headlinesFragment_to_articleFragment"
             app:destination="@id/articleFragment" />
@@ -27,7 +33,7 @@
     <fragment
         android:id="@+id/searchFragment"
         android:name="com.example.whataboutnews.ui.fragments.SearchFragment"
-        android:label="SearchFragment" >
+        android:label="SearchFragment">
         <action
             android:id="@+id/action_searchFragment_to_articleFragment"
             app:destination="@id/articleFragment" />
