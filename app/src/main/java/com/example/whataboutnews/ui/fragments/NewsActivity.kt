@@ -11,8 +11,8 @@ import com.example.whataboutnews.db.ArticleDatabase
 import com.example.whataboutnews.repository.NewsRepository
 
 class NewsActivity : AppCompatActivity() {
-    private lateinit var newsViewModel: NewsViewModel
-    private lateinit var binding: ActivityNewsBinding
+    lateinit var newsViewModel: NewsViewModel
+    lateinit var binding: ActivityNewsBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityNewsBinding.inflate(layoutInflater)
